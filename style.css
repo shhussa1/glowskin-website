@@ -1,21 +1,52 @@
+/* GlowSkin Esthetics - CIS300 */
+
 body {
-font-family: Arial;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 header {
-background: #eee;
-padding: 10px;
+  background-color: #ffe6eb;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 
 nav {
-margin: 10px 0;
+  background-color: #ffffff;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  margin: 0 10px;
+  font-weight: bold;
 }
 
 main {
-padding: 10px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 footer {
-background: #eee;
-padding: 10px;
+  text-align: center;
+  padding: 12px;
+  background-color: #f0f0f0;
+  font-size: 0.9rem;
 }
