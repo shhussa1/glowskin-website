@@ -328,3 +328,9 @@ th { background: #fff7f9; }
   .site-title { font-size: 1.35rem; }
   .logo { width: 42px; height: 42px; }
 }
+
+/* Fix anchor jump with sticky header (always works) */
+#about, #services, #contact {
+  padding-top: 120px;
+  margin-top: -120px;
+}
