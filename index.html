@@ -1,27 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>GlowSkin Esthetics</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="GlowSkin Esthetics — facials, waxing, lash & brow services, and skincare education." />
+  <title>GlowSkin Esthetics</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">GS</div>
+        <div>
+          <h1 class="site-title">GlowSkin Esthetics</h1>
+          <p class="tagline">Facials • Waxing • Lash & Brow • Skincare Education</p>
+        </div>
+      </div>
 
-<header>
-<h1>GlowSkin Esthetics</h1>
-</header>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<nav>
-Home | About | Services | Contact
-</nav>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h2>Healthy skin starts with the right routine.</h2>
+          <p>
+            GlowSkin Esthetics provides personalized skincare services and simple guidance so you can feel confident
+            in your skin — before, during, and after every appointment.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Request an Appointment</a>
+            <a class="btn btn-outline" href="#services">View Services</a>
+          </div>
 
-<main>
-<p>Welcome to my skincare website.</p>
-</main>
+          <div class="hero-badges">
+            <span class="badge">Client-focused care</span>
+            <span class="badge">Clean, simple guidance</span>
+            <span class="badge">Professional results</span>
+          </div>
+        </div>
 
-<footer>
-<p>Copyright 2026</p>
-</footer>
+        <div class="hero-card">
+          <p class="card-title">What you’ll find here</p>
+          <ul class="checklist">
+            <li>Service menu + pricing</li>
+            <li>Aftercare recommendations</li>
+            <li>Basic skincare tips</li>
+            <li>Easy contact form</li>
+          </ul>
+          <p class="small-note">Tip: Add your best facial photo here later.</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h3>About GlowSkin</h3>
+        <p>
+          GlowSkin Esthetics is focused on helping clients build healthier skin through professional treatments and
+          simple routines that fit real life. Our goal is to provide clear information about services, aftercare,
+          and what results to expect.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <h3>Services Preview</h3>
+        <p class="muted">A quick overview. Full details and packages can be added as the project continues.</p>
+
+        <div class="cards">
+          <article class="card">
+            <h4>Facials</h4>
+            <p>Customized treatments to cleanse, hydrate, and brighten your skin.</p>
+            <p class="price">Starting at $65</p>
+          </article>
+
+          <article class="card">
+            <h4>Waxing</h4>
+            <p>Clean, smooth results with skin-friendly prep and aftercare.</p>
+            <p class="price">Starting at $15</p>
+          </article>
+
+          <article class="card">
+            <h4>Lash & Brow</h4>
+            <p>Enhance your natural look with brow shaping and lash services.</p>
+            <p class="price">Starting at $20</p>
+          </article>
+        </div>
+
+        <!-- Optional mini table to show you can do tables later -->
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Time</th>
+                <th>Typical Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Signature Facial</td>
+                <td>60 min</td>
+                <td>$65–$95</td>
+              </tr>
+              <tr>
+                <td>Eyebrow Wax</td>
+                <td>15 min</td>
+                <td>$15–$25</td>
+              </tr>
+              <tr>
+                <td>Brow Shaping</td>
+                <td>20 min</td>
+                <td>$20–$35</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h3>Contact</h3>
+        <p class="muted">Send a message and we’ll follow up with availability and next steps.</p>
+
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@email.com" required />
+          </label>
+
+          <label>
+            Phone
+            <input type="tel" name="phone" placeholder="(000) 000-0000" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="What service are you interested in?" required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Submit</button>
+          <p class="small-note">Note: This form is for class project use (no server processing).</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 GlowSkin Esthetics</p>
+      <p class="footer-links">
+        <a href="https://www.aad.org/" target="_blank" rel="noopener">Skincare resource (AAD)</a>
+      </p>
+    </div>
+  </footer>
 </body>
-
 </html>
