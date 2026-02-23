@@ -13,7 +13,6 @@
 <!-- HEADER -->
 <header class="site-header">
   <div class="container header-inner">
-
     <div class="brand">
       <div class="logo">GS</div>
       <div>
@@ -28,7 +27,6 @@
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
-
   </div>
 </header>
 
@@ -37,7 +35,6 @@
 <!-- HERO -->
 <section class="hero">
   <div class="container hero-grid">
-
     <div>
       <h2>Healthy skin starts with the right routine.</h2>
       <p>
@@ -58,15 +55,14 @@
     </div>
 
     <div class="hero-card">
-      <p class="card-title">What you'll find here</p>
-      <ul>
-        <li>Service menu & pricing</li>
-        <li>Aftercare tips</li>
+      <p class="card-title">What you’ll find here</p>
+      <ul class="checklist">
+        <li>Service menu + pricing</li>
+        <li>Aftercare recommendations</li>
         <li>Skincare education</li>
         <li>Easy contact form</li>
       </ul>
     </div>
-
   </div>
 </section>
 
@@ -75,8 +71,8 @@
   <div class="container">
     <h3>About GlowSkin</h3>
     <p>
-      GlowSkin Esthetics helps clients achieve healthier skin through professional
-      treatments and easy routines that fit everyday life.
+      GlowSkin Esthetics focuses on helping clients achieve healthier skin through
+      professional treatments and easy-to-follow skincare routines.
     </p>
   </div>
 </section>
@@ -84,20 +80,18 @@
 <!-- SERVICES -->
 <section id="services" class="section section-alt">
   <div class="container">
-
     <h3>Services Preview</h3>
 
     <div class="cards">
-
       <article class="card">
         <h4>Facials</h4>
-        <p>Customized treatments to cleanse and hydrate skin.</p>
+        <p>Customized treatments for cleansing and hydration.</p>
         <p class="price">Starting at $65</p>
       </article>
 
       <article class="card">
         <h4>Waxing</h4>
-        <p>Smooth results with gentle techniques.</p>
+        <p>Smooth results with skin-friendly aftercare.</p>
         <p class="price">Starting at $15</p>
       </article>
 
@@ -106,7 +100,6 @@
         <p>Enhance your natural beauty.</p>
         <p class="price">Starting at $20</p>
       </article>
-
     </div>
 
     <!-- TABLE -->
@@ -116,10 +109,9 @@
           <tr>
             <th>Service</th>
             <th>Time</th>
-            <th>Price</th>
+            <th>Typical Price</th>
           </tr>
         </thead>
-
         <tbody>
           <tr>
             <td>Signature Facial</td>
@@ -143,17 +135,19 @@
   </div>
 </section>
 
-<!-- VIDEO SECTION (WORKING) -->
+<!-- VIDEO SECTION (REQUIRED FOR CLASS) -->
 <section class="section video-section">
   <div class="container video-grid">
 
     <div>
       <h3>Skincare Treatment Preview</h3>
       <p class="muted">
-        Watch a short skincare treatment example so clients know what to expect.
+        Watch a short example of a skincare treatment process so clients
+        understand what to expect during appointments.
       </p>
-      <ul>
-        <li>Relaxing treatment environment</li>
+
+      <ul class="checklist">
+        <li>Relaxing environment</li>
         <li>Professional skincare techniques</li>
         <li>Client-focused experience</li>
       </ul>
@@ -161,7 +155,8 @@
 
     <div class="video-card">
       <video controls width="100%">
-        <source src="video.mp4" type="video/mp4">
+        <!-- IMPORTANT: filename matches GitHub -->
+        <source src="video.mp4.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -172,31 +167,31 @@
 <!-- CONTACT FORM -->
 <section id="contact" class="section">
   <div class="container">
-
     <h3>Contact</h3>
 
     <form class="contact-form">
-
-      <label>Name
-        <input type="text" required>
+      <label>
+        Name
+        <input type="text" name="name" required>
       </label>
 
-      <label>Email
-        <input type="email" required>
+      <label>
+        Email
+        <input type="email" name="email" required>
       </label>
 
-      <label>Phone
-        <input type="tel" required>
+      <label>
+        Phone
+        <input type="tel" name="phone" required>
       </label>
 
-      <label>Message
-        <textarea rows="4" required></textarea>
+      <label>
+        Message
+        <textarea name="message" rows="4" required></textarea>
       </label>
 
       <button class="btn" type="submit">Submit</button>
-
     </form>
-
   </div>
 </section>
 
@@ -206,7 +201,11 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>© 2026 GlowSkin Esthetics</p>
-    <a href="https://www.aad.org/" target="_blank">Skincare Resource (AAD)</a>
+    <p>
+      <a href="https://www.aad.org/" target="_blank">
+        Skincare Resource (AAD)
+      </a>
+    </p>
   </div>
 </footer>
 
