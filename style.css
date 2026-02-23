@@ -1,4 +1,7 @@
-/* Color variables used throughout the website */
+   GlowSkin Esthetics Website Style
+   Author: Syed Hussain
+
+/* COLOR VARIABLES  */
 :root {
   --bg: #f7f7f7;
   --card: #ffffff;
@@ -6,37 +9,36 @@
   --muted: #555;
   --border: #dddddd;
   --brand: #ffe6eb;
-  --shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* Apply box sizing to all elements */
+/* GLOBAL RESET  */
 * {
   box-sizing: border-box;
 }
 
-/* Basic page styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
   margin: 0;
   line-height: 1.6;
+  color: var(--text);
+  background: linear-gradient(180deg,#fff7f9 0%,#f7f7f7 40%,#ffffff 100%);
 }
 
-/* Center content and control width */
+/* ---------- CONTAINER ---------- */
 .container {
-  max-width: 960px;
+  max-width: 1000px;
   margin: auto;
   padding: 0 16px;
 }
 
-/* Header area */
+/* ---------- HEADER ---------- */
 .site-header {
   background-color: var(--brand);
   border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 0;
 }
 
-/* Header layout */
 .header-inner {
   display: flex;
   justify-content: space-between;
@@ -44,166 +46,169 @@ body {
   padding: 18px 0;
 }
 
-/* Logo and title grouping */
 .brand {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* Logo box styling */
 .logo {
-  width: 44px;
-  height: 44px;
-  border: 2px solid var(--text);
-  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #000;
+  border-radius: 12px;
   display: grid;
   place-items: center;
   font-weight: bold;
-  background-color: var(--card);
+  background: white;
 }
 
-/* Website title */
 .site-title {
   margin: 0;
-  font-size: 1.8rem;
 }
 
-/* Subtitle text */
 .tagline {
   margin: 0;
   font-size: 0.9rem;
   color: var(--muted);
 }
 
-/* Navigation links */
+/* ---------- NAVIGATION ---------- */
 .site-nav a {
   text-decoration: none;
-  color: var(--text);
-  margin-left: 12px;
+  color: black;
+  margin-left: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
   font-weight: bold;
-  padding: 8px 10px;
-  border-radius: 8px;
+  transition: 0.2s;
 }
 
-/* Hover effect for navigation */
 .site-nav a:hover {
-  background-color: #ffffffaa;
+  background: white;
 }
 
-/* Active navigation link */
 .site-nav a.active {
-  background-color: var(--card);
+  background: white;
   border: 1px solid var(--border);
 }
 
-/* Hero section spacing */
+/* ---------- HERO SECTION ---------- */
 .hero {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
-/* Two-column hero layout */
 .hero-grid {
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
   gap: 20px;
 }
 
-/* Buttons */
+.hero h2 {
+  font-size: 2rem;
+}
+
+.hero-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* ---------- BUTTONS ---------- */
 .btn {
-  background-color: var(--text);
+  background: black;
   color: white;
   padding: 10px 14px;
   border-radius: 10px;
   text-decoration: none;
   border: none;
-  font-weight: bold;
   cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
 }
 
-/* Outline button style */
+.btn:hover {
+  transform: translateY(-2px);
+}
+
 .btn-outline {
-  background-color: transparent;
-  color: var(--text);
-  border: 1px solid var(--text);
+  background: white;
+  color: black;
+  border: 1px solid black;
 }
 
-/* Badge styling */
+/* ---------- BADGES ---------- */
 .badge {
   display: inline-block;
-  background-color: var(--card);
-  border: 1px solid var(--border);
+  margin: 6px 4px 0 0;
   padding: 6px 10px;
+  background: white;
+  border: 1px solid var(--border);
   border-radius: 999px;
-  margin-right: 6px;
   font-size: 0.9rem;
 }
 
-/* Card design used in multiple sections */
-.hero-card,
-.card {
-  background-color: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 16px;
-  box-shadow: var(--shadow);
-}
-
-/* Services card layout */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
-/* Price text */
-.price {
-  font-weight: bold;
-}
-
-/* Section spacing */
+/* ---------- SECTIONS ---------- */
 .section {
-  padding: 24px 0;
+  padding: 30px 0;
 }
 
-/* Alternate background section */
 .section-alt {
-  background-color: #fdf0f3;
+  background: #fdf0f3;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 
-/* Muted paragraph text */
-.muted {
-  color: var(--muted);
+/* ---------- SERVICE CARDS ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
 }
 
-/* Table container */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 25px rgba(0,0,0,0.1);
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* ---------- TABLE ---------- */
 .table-wrap {
   margin-top: 20px;
-  overflow-x: auto;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 12px;
+  overflow-x: auto;
 }
 
-/* Table styling */
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
   padding: 10px;
   border-bottom: 1px solid var(--border);
-  text-align: left;
 }
 
 th {
-  background-color: #ffffff;
+  background: #fff7f9;
+  text-align: left;
 }
 
-/* Video section layout */
+/* ---------- VIDEO SECTION ---------- */
 .video-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -211,27 +216,24 @@ th {
   align-items: center;
 }
 
-/* Video container styling */
 .video-card {
-  background-color: var(--card);
+  background: white;
   padding: 14px;
-  border-radius: 14px;
+  border-radius: 18px;
   border: 1px solid var(--border);
-  box-shadow: var(--shadow);
 }
 
-/* Make video responsive */
 .video-card video {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
-/* Contact form design */
+/* ---------- CONTACT FORM ---------- */
 .contact-form {
-  background-color: var(--card);
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 16px;
   max-width: 600px;
 }
 
@@ -250,9 +252,16 @@ th {
   border: 1px solid var(--border);
 }
 
-/* Footer styling */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: pink;
+  box-shadow: 0 0 0 3px rgba(255,192,203,0.3);
+}
+
+/* ---------- FOOTER ---------- */
 .site-footer {
-  background-color: #f0f0f0;
+  background: #f0f0f0;
   border-top: 1px solid var(--border);
   padding: 15px 0;
 }
@@ -263,8 +272,8 @@ th {
   flex-wrap: wrap;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 820px) {
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 800px) {
 
   .header-inner {
     flex-direction: column;
@@ -278,10 +287,5 @@ th {
 
   .cards {
     grid-template-columns: 1fr;
-  }
-
-  .site-nav a {
-    margin-left: 0;
-    margin-right: 10px;
   }
 }
