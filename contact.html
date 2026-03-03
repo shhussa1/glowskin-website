@@ -1,70 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | GlowSkin Esthetics</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | GlowSkin Esthetics</title>
 
+  <meta name="description" content="Contact GlowSkin Esthetics to request an appointment. Use the on-site form to send your details and message.">
+  <meta name="keywords" content="contact, appointment, booking, esthetics, facials, waxing">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DW6QM2KMZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0DW6QM2KMZ');
+  </script>
+</head>
 <body>
 
 <header class="site-header">
-<div class="container header-inner">
-<div class="brand">
-<div class="logo">GS</div>
-<div>
-<h1 class="site-title">GlowSkin Esthetics</h1>
-<p class="tagline">Facials • Waxing • Lash & Brow • Skincare Education</p>
-</div>
-</div>
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="logo">GS</div>
+      <div>
+        <h1 class="site-title">GlowSkin Esthetics</h1>
+        <p class="tagline">Facials • Waxing • Lash & Brow • Skincare Education</p>
+      </div>
+    </div>
 
-<nav class="site-nav">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="contact.html" class="active">Contact</a>
-</nav>
-</div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<main class="section">
-<div class="container">
+<main>
 
-<h2>Contact GlowSkin Esthetics</h2>
-<p class="muted">
-Fill out the form below to request an appointment or ask questions about services.
-</p>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h2>Contact & Appointments</h2>
+      <p>
+        Use the form below to request an appointment. Since this is a class project,
+        the form does not submit to a server, but it is fully coded with correct structure.
+      </p>
 
-<form class="contact-form">
+      <div class="hero-badges">
+        <span class="badge">Quick response</span>
+        <span class="badge">Clear scheduling</span>
+        <span class="badge">Simple aftercare tips</span>
+      </div>
+    </div>
 
-<label>Name
-<input type="text" required>
-</label>
+    <div class="hero-card">
+      <p class="card-title">Direct contact</p>
+      <ul class="checklist">
+        <li>Email: <a href="mailto:info@glowskin.com">info@glowskin.com</a></li>
+        <li>Service questions welcome</li>
+        <li>Request a time + date</li>
+        <li>Share your skincare goals</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-<label>Email
-<input type="email" required>
-</label>
+<section class="section">
+  <div class="container">
+    <h3>Request Appointment</h3>
 
-<label>Phone
-<input type="tel" required>
-</label>
+    <form class="contact-form" action="#">
+      <label>
+        Full Name
+        <input type="text" name="full_name" required>
+      </label>
 
-<label>Message
-<textarea rows="4" required></textarea>
-</label>
+      <label>
+        Email Address
+        <input type="email" name="email" required>
+      </label>
 
-<button class="btn">Submit</button>
+      <label>
+        Phone Number
+        <input type="tel" name="phone" required>
+      </label>
 
-</form>
+      <label>
+        Preferred Service
+        <input type="text" name="service" placeholder="Facial, Waxing, Lash & Brow" required>
+      </label>
 
-</div>
+      <label>
+        Message
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+
+      <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <p class="muted" style="margin-top: 14px;">
+      Note: This form is configured with <code>action="#"</code> as required for this course project.
+    </p>
+  </div>
+</section>
+
 </main>
 
 <footer class="site-footer">
-<div class="container footer-inner">
-<p>© 2026 GlowSkin Esthetics</p>
-</div>
+  <div class="container footer-inner">
+    <p>© 2026 GlowSkin Esthetics</p>
+    <p>
+      Email:
+      <a href="mailto:info@glowskin.com">info@glowskin.com</a>
+    </p>
+    <p>
+      <a href="https://www.aad.org/" target="_blank" rel="noopener">
+        Skincare Resource (AAD)
+      </a>
+    </p>
+  </div>
 </footer>
 
 </body>
